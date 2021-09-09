@@ -1,0 +1,71 @@
+<!-- 
+   This example used named areas to place elements 
+   on the grid 
+ -->
+ 
+<h1>Example</h1>
+
+<!-- Grid Container -->
+<div class="container">
+ 
+  <div class="box a"></div>
+  <div class="box b"></div>
+  <div class="box c"></div>
+  <div class="box d"></div>
+  <div class="box e"></div>
+  
+</div>
+
+
+<style>
+  
+  /* Your styles here */
+  
+  .container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "header header header"
+                         "sidebar m1 m1"
+                         "sidebar m1 m1"
+                         "sidebar m2 m2"
+                         "footer footer footer";
+
+  }
+  
+  
+  
+  
+  /* Some default styles to get you started */
+  
+  .box {
+    min-height: 100px;
+  }
+  
+  .a {
+    background-color: #d45353;
+    grid-area: header;
+  }
+  
+  .b {
+    background-color: #eae55e;
+    grid-area: sidebar;
+  }
+  
+  .c {
+    background-color: #65d451;
+    grid-area: m1;
+  }
+  
+  .d {
+    background-color: #86b9f5;
+    grid-area: m2;
+  }
+  
+  .e {
+    background-color: #cf86f5;
+    grid-area: footer;
+  }
+  
+</style>
