@@ -1,0 +1,142 @@
+body{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.dashboard{
+
+    width: 800px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "h h h h"
+                         "a b b b"
+                         "c d e f";
+    grid-gap: 1rem;
+    text-align: center;
+
+}
+
+.title{
+
+    grid-area: h;
+
+}
+
+.grid-cell{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    background-size: cover;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    height: 200px;
+    
+}
+
+.grid-cell h2{
+
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+}
+
+.grid-cell p{
+
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+
+}
+
+.grid-cell label{
+
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+
+}
+
+.grid-cell input{
+
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+
+.grid-cell button{
+
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    width: 35%;
+    align-self: flex-end;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+
+.grid-cell button:hover{
+
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.population{
+
+    grid-area: a;
+    background-image: url('images/finland-8.jpg');
+    justify-content: flex-end;
+
+}
+
+.welcome{
+
+    grid-area: b;
+    background-image: url('images/finland-2.jpg');
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.gdp{
+
+    grid-area: c;
+    background-image: url('images/finland-3.jpg');
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.code{
+
+    grid-area: d;
+    background-image: url('images/finland-4.jpg');
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.govt{
+
+    grid-area: e;
+    background-image: url('images/finland-1.jpg');
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+.news{
+
+    grid-area: f;
+    background-image: url('images/finland-5.jpg');
+
+}
