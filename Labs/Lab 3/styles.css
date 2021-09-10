@@ -39,8 +39,17 @@ body{
     background-size: cover;
     padding: 0.5rem 1rem 0.5rem 1rem;
     height: 200px;
+    border-radius: 5px;
     
 }
+
+.grid-cell.scale:hover{
+
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
 
 .grid-cell h2{
 
@@ -69,6 +78,12 @@ body{
     margin-bottom: 0.3em;
     border: 1px solid transparent;
     border-radius: 5px;
+
+}
+
+.grid-cell input:hover{
+
+    transform: scale(1.05);
 
 }
 
