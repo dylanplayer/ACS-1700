@@ -1,0 +1,70 @@
+body {
+    font-family: helvetica;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "f d"
+                         "f v";
+    grid-gap: 20px;
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#order-form {
+    grid-area: f;
+    height: 640px;
+}
+
+#order-details {
+    grid-area: d;
+}
+
+#order-visualizer {
+    align-items: center;
+    justify-content: space-between;
+    grid-area: v;
+}
+
+#pizza {
+    background-color: tomato;
+    background-image: url(/images/cheese.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+input {
+    padding: 8px;
+}
+
+select {
+    padding: 8px;
+}
+
+label {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    font-weight: 500;
+    font-size: small;
+}
+
+p {
+    margin-top: 30px;
+}
